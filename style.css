@@ -1,0 +1,70 @@
+/* BASE CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* DESIGN CSS */
+
+.main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(220, 15%, 55%);
+}
+
+.main_div > .work_box {
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 20vw;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: .8rem;
+}
+
+.main_div > .work_box > .qr_box {
+    height: 60%;
+    border-radius: 10px;
+    background: url("./images/image-qr-code.png");
+    background-size: cover;
+}
+
+.main_div > .work_box > .text_box {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.main_div > .work_box > .text_box > .bold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 19.8px;
+    font-weight: 700;
+}
+
+.main_div > .work_box > .text_box > .light {
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(212, 19%, 72%);
+}
+
+@media (max-width: 405px) {
+
+    .main_div > .work_box {
+        height: 90vh;
+        width: 90vw;
+    }
+}
